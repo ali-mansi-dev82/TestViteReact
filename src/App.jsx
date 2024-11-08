@@ -15,8 +15,8 @@ function App() {
     <div>
       <h1>Products</h1>
       <ul>
-        {data.map((product) => (
-          <li key={product.id}>{product.name}</li>
+        {data?.data?.map((user) => (
+          <li key={user.id}>{user.username}:{user.firstName}-{user.lastName}</li>
         ))}
       </ul>
     </div>
